@@ -29,7 +29,6 @@ body {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  background-color: tomato;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -82,7 +81,7 @@ body {
 
 .hero-title {
   margin-top: 0;
-  margin-bottom: 30;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -129,16 +128,36 @@ body {
 
 /* Чем мы занимаемся и Наша команда */
 
-.services-header,
+.services {
+  margin-bottom: 94px;
+}
+
+.services-header {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--primary-black-color);
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
 .team-header {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--primary-black-color);
+  margin-top: 0;
+  margin-bottom: 50px;
+  /* padding-top: 94px; */
 }
 
 .team {
   background-color: var(--light-backgroung-color);
+}
+
+.team > .container {
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .team-name-header {
@@ -147,6 +166,8 @@ body {
   line-height: 1.19;
   text-align: center;
   color: var(--primary-black-color);
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .team-name-position {
@@ -155,6 +176,8 @@ body {
   line-height: 1.19;
   text-align: center;
   color: var(--primary-text-color);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Футер */
@@ -163,18 +186,24 @@ body {
   background-color: var(--dark-background-color);
 }
 
+.footer-section > .container {
+  padding: 60px 15px;
+}
+
 .footer-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--primary-white-color);
+  margin-bottom: 20px;
 }
 
 .footer-item > a {
   font-style: normal;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 9px;
 }
 
 .link.footer-address {
