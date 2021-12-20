@@ -17,10 +17,21 @@ body {
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .link {
   text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: tomato;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* Хедер */
@@ -66,9 +77,12 @@ body {
 .hero {
   background-color: var(--dark-background-color);
   text-align: center;
+  margin-bottom: 94px;
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -86,12 +100,16 @@ body {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 32px;
+  border: none;
+  min-width: 200px;
 }
 
 /* Особенности */
 
-.features-header {
-  color: var(--primary-white-color);
+.features {
+  margin-bottom: 94px;
 }
 
 .features-item-header {
@@ -99,10 +117,14 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--primary-black-color);
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .features-item-text {
   line-height: 1.71;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Чем мы занимаемся и Наша команда */
