@@ -5,6 +5,7 @@
   --primary-white-color: #ffffff;
   --dark-background-color: #2f303a;
   --light-backgroung-color: #f5f4fa;
+  --button-hover-color: #188ce8;
 }
 
 .list {
@@ -46,7 +47,7 @@ h3 {
   border: 0;
   padding: 0;
   clip: rect(0 0 0 0);
-  clip-path: inset(50%);
+  clip-path: inset(100%);
   margin: -1px;
 }
 
@@ -66,8 +67,8 @@ body {
   font-size: 26px;
   line-height: 1.19;
   color: var(--primary-black-color);
-  padding-top: 24px;
-  padding-bottom: 25px;
+  /* padding-top: 24px;
+  padding-bottom: 25px; */
 }
 
 .logo-web {
@@ -92,7 +93,17 @@ body {
   margin-right: 50px;
 }
 
-.header-link,
+.header-link {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-black-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .contact-link {
   display: block;
   font-weight: 500;
@@ -136,7 +147,6 @@ body {
 .hero {
   background-color: var(--dark-background-color);
   text-align: center;
-  margin-bottom: 94px;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -160,20 +170,27 @@ body {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   cursor: pointer;
+  min-width: 136px;
   border-radius: 4px;
   padding: 10px 32px;
   border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--button-hover-color);
 }
 
 /* Особенности */
 
 .features {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .features-item {
   min-width: 270px;
-  height: 101px;
 }
 .features-item:not(:last-child) {
   margin-right: 30px;
@@ -193,14 +210,14 @@ body {
 
 .features-item-text {
   line-height: 1.71;
-  margin-top: 0;
-  margin-bottom: 0;
+  /* margin-top: 0;
+  margin-bottom: 0; */
 }
 
 /* Чем мы занимаемся и Наша команда */
 
 .services {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .services-list {
@@ -227,7 +244,6 @@ body {
   color: var(--primary-black-color);
   margin-top: 0;
   margin-bottom: 50px;
-  /* padding-top: 94px; */
 }
 
 .team {
