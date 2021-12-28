@@ -76,7 +76,7 @@ body {
 }
 
 .header-section {
-  border: 1px solid var(--light-backgroung-color);
+  border-bottom: 1px solid var(--light-backgroung-color);
 }
 
 .header-list {
@@ -248,9 +248,6 @@ body {
 
 .team {
   background-color: var(--light-backgroung-color);
-}
-
-.team > .container {
   padding-bottom: 94px;
   padding-top: 94px;
 }
@@ -276,17 +273,18 @@ body {
   line-height: 1.19;
   text-align: center;
   color: var(--primary-black-color);
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
 .team-name-position {
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   color: var(--primary-text-color);
-  margin-top: 0;
+}
+
+.team-description {
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 
@@ -294,10 +292,8 @@ body {
 
 .footer-section {
   background-color: var(--dark-background-color);
-}
-
-.footer-section > .container {
-  padding: 60px 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -371,8 +367,7 @@ body {
 .filter-btn-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
-  padding-bottom: 16px;
+  margin-bottom: 50px;
 }
 
 .project-list {
